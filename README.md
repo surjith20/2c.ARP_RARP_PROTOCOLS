@@ -46,6 +46,8 @@ while True:
     print("MAC Address",s.recv(1024).decode())
 ```
 ## OUPUT -RARP
+![image](https://github.com/user-attachments/assets/e61933c4-721d-4c2b-bfe9-dd64e9648ff5)
+
 ![image](https://github.com/user-attachments/assets/f1304fff-3631-4b00-99df-b10626aeca21)
 
 ## RESULT
