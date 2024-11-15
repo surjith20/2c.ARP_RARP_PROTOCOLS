@@ -18,6 +18,7 @@ stored.
 P
 ## PROGRAM - ARP
 client.py
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -31,12 +32,11 @@ while True:
     except KeyError:
         c.send("Not Found".encode())
 
-## OUPUT - ARP
-![image](https://github.com/user-attachments/assets/80dccf69-dcfc-4c7f-9e57-e2b357c0c326)
-
+```
 
 ## PROGRAM - RARP
 server.py
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -44,6 +44,7 @@ while True:
     ip=input("Enter logical Address : ")
     s.send(ip.encode())
     print("MAC Address",s.recv(1024).decode())
+```
 ## OUPUT -RARP
 ![image](https://github.com/user-attachments/assets/f1304fff-3631-4b00-99df-b10626aeca21)
 
